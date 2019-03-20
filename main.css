@@ -7,6 +7,9 @@ section {
   padding: 150px 0;
 }
 
+.left-spacing{
+  padding-left: 20px;
+}
 .bg-primary {
   background-image: url("images/background-img.jpg");
   height: 100%;

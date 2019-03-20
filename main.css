@@ -10,3 +10,12 @@ header {
 section {
   padding: 150px 0;
 }
+
+.bg-primary {
+  background-image: url("images/background-img.jpg");
+  background-color: #007bff !important;
+}
+
+.bottom-spacing{
+  padding-bottom: 20px;
+}

@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
- */
+
 header {
   padding: 156px 0 100px;
 }
@@ -13,9 +9,7 @@ section {
 
 .bg-primary {
   background-image: url("images/background-img.jpg");
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

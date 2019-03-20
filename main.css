@@ -12,8 +12,9 @@ section {
 }
 
 .bg-primary {
+  max-width: 100%;
+  height: auto;
   background-image: url("images/background-img.jpg");
-  background-color: #007bff !important;
 }
 
 .bottom-spacing{

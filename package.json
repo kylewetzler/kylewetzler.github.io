@@ -27,8 +27,9 @@
     },
     "dependencies": {
         "bootstrap": "4.2.1",
-        "jquery": "3.3.1",
-        "jquery.easing": "^1.4.1"
+        "jquery": "^3.3.1",
+        "jquery.easing": "^1.4.1",
+        "typed.js": "^2.0.10"
     },
     "devDependencies": {
         "browser-sync": "2.26.3",

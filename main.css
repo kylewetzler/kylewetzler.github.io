@@ -13,7 +13,7 @@ section {
   white-space: nowrap;
   margin: 0 auto;
   animation:
-          typing 3.5s steps(40, end),
+          typing 3.5s steps(20, end),
           blink-caret .75s step-end infinite;
 }
 

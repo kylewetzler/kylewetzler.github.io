@@ -8,6 +8,7 @@ section {
 }
 
 .typewriter h1{
+  width: auto;
   overflow: hidden;
   border-right: .15em solid #000000;
   white-space: nowrap;

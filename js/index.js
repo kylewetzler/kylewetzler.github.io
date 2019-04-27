@@ -6,7 +6,7 @@ app.controller('mainCtrl', function($scope) {
 		image: 'images/contact.png'
 	},{
 		name: 'Free',
-		image:
+		image: 'https://source.unsplash.com/Cp-LUHPRpWM/900x900'
 	},{
 		name: 'Explore',
 		image: 'https://source.unsplash.com/7BjmDICVloE/900x900'

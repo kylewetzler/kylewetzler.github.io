@@ -3,7 +3,7 @@ var app = angular.module('app', ['ngAnimate'])
 app.controller('mainCtrl', function($scope) {
 	$scope.boxes = [{
 		name: 'Friends',
-		image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900'
+		image: 'images/boss.png'
 	},{
 		name: 'Free',
 		image: 'https://source.unsplash.com/Cp-LUHPRpWM/900x900'

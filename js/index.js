@@ -2,6 +2,9 @@ var app = angular.module('app', ['ngAnimate'])
 
 app.controller('mainCtrl', function($scope) {
 	$scope.boxes = [{
+		name: 'Friends',
+		image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900'
+	},{
 		name: 'Free',
 		image: 'https://source.unsplash.com/Cp-LUHPRpWM/900x900'
 	},{
@@ -16,6 +19,24 @@ app.controller('mainCtrl', function($scope) {
 	}, {
 		name: 'Grand',
 		image: 'https://source.unsplash.com/Ixp4YhCKZkI/900x900'
+	}, {
+		name: 'Mist',
+		image: 'https://source.unsplash.com/8BmNurlVR6M/900x900'
+	}, {
+		name: 'Sea',
+		image: 'https://source.unsplash.com/6YqpFWWQsno/900x900'
+	}, {
+		name: 'Reach',
+		image: 'https://source.unsplash.com/zFnk_bTLApo/900x900'
+	}, {
+		name: 'Awe',
+		image: 'https://source.unsplash.com/j4PaE7E2_Ws/900x900'
+	}, {
+		name: 'Surf',
+		image: 'https://source.unsplash.com/uohGiEVhWiQ/900x900'
+	}, {
+		name: 'Thrill',
+		image: 'https://source.unsplash.com/ssrbaKvxaos/900x900'
 	}, ];
 
 	$scope.selected = [];
@@ -74,7 +95,7 @@ app.directive('bigBox', function($timeout) {
 			for (var key in scope.box.position) {
 				css[key] = scope.box.position[key] + 'px';
 			}
-			
+
 			element.css(css);
 
 			$timeout(function() {
@@ -91,7 +112,7 @@ app.directive('bigBox', function($timeout) {
 					height: '100%'
 				})
 			}, 500)
-			
+
 			$timeout(function(){
 				element.addClass('show');
 			}, 800)

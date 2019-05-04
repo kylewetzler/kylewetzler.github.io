@@ -35,5 +35,5 @@ section {
 
 .center-image{
   display: block;
-  horiz-align: center;
+  margin: 0 auto;
 }

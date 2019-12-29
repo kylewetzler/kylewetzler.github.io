@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+
+    <script src="drawing.js"></script>
+    <script src="fourier.js"></script>
+    <script src="sketch.js"></script>
+
+    <title>Kyle Wetzler's Personal Webpage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger montserrat" href="#page-top">Kyle Wetzler</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href=index.html#education>Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="projects.html">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class = "bg-light">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <table class = "table">
+                <tr>
+                    <h2>Discrete Fourier Transform</h2>
+                    <p class="lead">This JavaScript project allows you to draw a small image by hand, and have it approximated and
+                    recreated using the Fourier Transform. Just click in the small sketch window and draw your image. When you're
+                        happy with it, click again within the window to stop drawing, and then click the <b>"Draw Sketch"</b> button and
+                    watch it get recreated!</p>
+                </tr>
+                <tr>
+                    <td id="c1"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="clearSketch()">Clear Sketch</button>
+                        <button onclick="triggerSketch()">Draw Sketch</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="c2"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

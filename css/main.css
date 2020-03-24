@@ -19,7 +19,7 @@
 .custom-education-section {
     padding-top: 30rem;
     padding-bottom: 30rem;
-    background: linear-gradient(to bottom,#161616 0,rgba(22,22,22,.7) 75%,#161616 100%),url(../img/psu.png);
+    background: linear-gradient(to bottom,#161616 0,rgba(22,22,22,.5) 75%,#161616 100%),url(../img/psu.png);
 }
 
 .custom-experience-section{

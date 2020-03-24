@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
 
@@ -8,34 +8,37 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
-
-    <script src="drawing.js"></script>
-    <script src="fourier.js"></script>
-    <script src="sketch.js"></script>
-
     <title>Kyle Wetzler's Personal Webpage</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Typed JS file-->
+    <script src="typed.min.js"></script>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger montserrat" href="index.html#page-top">Kyle Wetzler</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">Kyle Wetzler</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href=index.html#education>Education</a>
+                    <a class="nav-link js-scroll-trigger" href="index.html#education">Education</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="index.html#experience">Experience</a>
@@ -44,23 +47,26 @@
                     <a class="nav-link js-scroll-trigger" href="index.html#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="projects.html">Projects</a>
+                    <a class="nav-link js-scroll-trigger" href="#">Projects</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<section class = "bg-light">
+<section class="projects-nav"></section>
+
+<section id="fourier" class="projects-section bg-light">
+
     <div class="row">
         <div class="col-lg-8 mx-auto">
             <table class = "table">
                 <tr>
                     <h2>Discrete Fourier Transform</h2>
                     <p class="lead">This JavaScript project allows you to draw a small image by hand, and have it approximated and
-                    recreated using the Fourier Transform. Just click in the small sketch window and draw your image. When you're
+                        recreated using the Fourier Transform. Just click in the small sketch window and draw your image. When you're
                         happy with it, click again within the window to stop drawing, and then click the <b>"Generate Sketch"</b> button and
-                    watch it get recreated!</p>
+                        watch it get recreated!</p>
                 </tr>
                 <tr>
                     <td id="c1"></td>
@@ -78,5 +84,60 @@
     </div>
 
 </section>
+
+<!-- Contact Section -->
+<section class="contact-section bg-black">
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50">
+                            <a href="#">kylewetzler@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="social d-flex justify-content-center">
+            <a href="https://www.linkedin.com/in/kyle-wetzler-739b93190/" class="mx-2">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
+    <div class="container">
+        Copyright &copy; Kyle Wetzler 2020
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/grayscale.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+
+<script src="js/drawing.js"></script>
+<script src="js/fourier.js"></script>
+<script src="js/sketch.js"></script>
+
 </body>
+
 </html>

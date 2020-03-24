@@ -1,0 +1,105 @@
+.bottom-spacing{
+    padding-bottom: 30px;
+}
+
+.bottom-padding{
+    padding-bottom: 2em;
+}
+
+.scene-container {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    max-width: 500px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-education-section {
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+    background: linear-gradient(to bottom,#161616 0,rgba(22,22,22,.9) 75%,#161616 100%),url(../img/psu.png);
+}
+
+.custom-experience-section{
+    padding-bottom: 30rem;
+    background: linear-gradient(to top, #ffffff 0, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+.custom-skills-section {
+    background: linear-gradient(to bottom,#161616 0,rgba(22,22,22,.9) 75%, #161616 100%),url(../img/code.jpg);
+}
+
+.transition-section-to-bottom{
+    padding-bottom: 10rem;
+    background: linear-gradient(to bottom, #161616 0, rgba(197, 197, 197, 0.9) 50%, #f8f9fa 100%);
+}
+
+.transition-section-to-top{
+    padding-bottom: 10rem;
+    background: linear-gradient(to top, #161616 0, rgba(197, 197, 197, 0.9) 50%, #f8f9fa 100%);
+}
+
+.education h1{
+    font-size: 4rem;
+    font-family: "Varela Round";
+}
+
+.experience-h1{
+    font-size: 4rem;
+    font-family: "Varela Round";
+    padding-bottom: 2em;
+}
+
+.experience-padding{
+    padding-top: 1.5em !important;
+    padding-bottom: 1.5em !important;
+}
+
+.skills-h1{
+    font-size: 4rem;
+    font-family: "Varela Round";
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.half-bright{
+    filter: brightness(50%);
+}
+
+.projects-nav{
+    padding-top: 5em;
+    background-color: #161616;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.overflow {
+    position: relative;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.overflow .text {
+    display: inline-block;
+    border-bottom: 5px solid #333;
+    overflow: hidden;
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Varela Round";
+    font-weight: bold;
+}
+.overflow.in-view .text span{
+    display: inline-block;
+    padding: 0px 0px 0px 5px;
+    letter-spacing: 1px;
+}
+

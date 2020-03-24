@@ -59,6 +59,10 @@
     padding-bottom: 1.5em !important;
 }
 
+
+.skills-padding{
+    padding-left: 0px;
+}
 .skills-h1{
     font-size: 4rem;
     font-family: "Varela Round";

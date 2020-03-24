@@ -89,7 +89,6 @@
 }
 .overflow .text {
     display: inline-block;
-    border-bottom: 5px solid #333;
     overflow: hidden;
     margin: 5px 0px;
     text-align: center;
@@ -103,3 +102,6 @@
     letter-spacing: 1px;
 }
 
+.masthead-letter-spacing{
+    letter-spacing: 0rem !important;
+}

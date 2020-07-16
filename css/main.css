@@ -177,3 +177,27 @@
     background-size: cover;
     background-position: center;
 }
+
+.headshot-background {
+    background: url(../img/photo_headshot.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.kpmg-background {
+    background: url(../img/kpmg-logo-square.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.thon-background {
+    background: url(../img/thon-logo-square.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.boomi-background {
+    background: url(../img/boomi-logo-square.jpg);
+    background-position: center;
+    background-size: cover;
+}

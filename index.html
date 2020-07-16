@@ -130,11 +130,32 @@
         <div style="margin-top: 10%;">
           <div class="row text-white" style="height: 20%; text-align: center;">
             <div class="col-lg-2">
-              <div class="card shadow-lg comcast-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
-                <div class="card-body">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important;" data-toggle="modal" data-target="#exampleModal">
+                <div class="card shadow-lg comcast-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                  <div class="card-body">
+                  </div>
+                </div>
+                <small>Comcast</small>
+              </button>
+            </div>
+            <div class="modal fade-scale" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content" style="width: 75vh; height: 75vh;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
                 </div>
               </div>
-              <small>Comcast</small>
             </div>
             <div class="col-lg-2">
               <div class="card shadow-lg thon-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
@@ -148,7 +169,7 @@
                 <div class="card-body">
                 </div>
               </div>
-              <small>KPMG Consulting</small>
+              <small>KPMG</small>
             </div>
             <div class="col-lg-2">
               <div class="card shadow-lg boomi-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
@@ -158,12 +179,14 @@
               <small>Dell Boomi</small>
             </div>
             <div class="col-lg-2">
-              <div class="card shadow-lg" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem; background: rgba(0,0,0,0.24)">
-                <div class="card-body">
-                  <i class="fas fa-plus-circle fa-2x text-gray-300"></i>
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important;" data-toggle="modal" data-target="#exampleModal">
+                <div class="card shadow-lg" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem; background: rgba(0,0,0,0.24)">
+                  <div class="card-body">
+                    <i class="fas fa-plus-circle fa-2x text-gray-300"></i>
+                  </div>
                 </div>
-              </div>
-              <small>Other</small>
+                <small>Other</small>
+              </button>
             </div>
           </div>
         </div>

@@ -28,224 +28,134 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="test-background">
+  <div class="container-fluid">
+    <div class="row" style="height: 85vh;">
+      <div class="col-lg-4">
+        <div style="margin-top: 20%">
+          <div class="row text-white">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-10">
+              <div>
+                <h1>10:10</h1>
+                <p>Wednesday, July 15</p>
+              </div>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Kyle Wetzler</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="PLA.html">PLA</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <div class="bottom-spacing">
-          <img src="img/photo_headshot.jpg" class="img-responsive rounded-circle"
-               style="display:inline" alt="Kyle Wetzler" width="350" height="350">
-        </div>
-        <h1 class="mx-auto my-0 text-uppercase masthead-letter-spacing">Hi, I'm Kyle</h1>
-        <div id="typed-strings">
-          <p></p>
-          <p class="montserrat">I'm a student at Penn State</p>
-          <p class="montserrat">I'm a creative thinker</p>
-          <p class="montserrat">I'm an aspiring developer</p>
-        </div>
-        <style> #typed {color:rgba(255,255,255,.5)!important;
-                        font-size: 30px;}
-        .typed-cursor {font-size: 30px;}
-        </style>
-        <span id="typed"></span>
-        <script>
-          var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings',
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true
-          });
-        </script>
-      </div>
-    </div>
-  </header>
-
-  <!-- Education Section -->
-  <section  id="education" class="custom-education-section education">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h1 class="text-white mb-4">Education</h1>
-         <h2 class="text-white-50">I am a student at <b>Penn State University</b> in the Class of 2020. I'm in the <br><b>Schreyer Honors College</b>, and I study a couple disciplines.<br><br></h2>
-          <h2 class="text-white-50">Majors:</h2>
-          <ul class="text-white">
-            <li><h3><b>Computer Science</b> College of Engineering</h3></li>
-            <li><h3><b>Mathematics</b> Eberly College of Science</h3></li>
-          </ul>
-          <h2 class="text-white-50">Minor:</h2>
-          <ul class="text-white">
-            <li><h3><b>Physics</b> Eberly College of Science</h3></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="transition-section-to-bottom">
-    <div class="container"></div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="projects-section bg-light">
-    <div class="container">
-      <!-- <h1 class="text-black experience-h1 text-center mb-4"><b>Experience</b></h1> -->
-      <!-- THON Project Row -->
-      <div>
-        <div class="overflow bottom-padding align-center">
-          <div class="text"><span>Experience</span></div>
-        </div>
-      </div>
-      <div id="THON-div" class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/THON-logo.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left experience-padding">
-            <h4>April 2019 - Present<br>State College, PA</h4>
-            <h5>Systems Administrator</h5>
-            <!-- Button trigger modal -->
-            <br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#THON-Center">
-              What I do for THON
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="THON-Center" tabindex="-1" role="dialog" aria-labelledby="THON" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="THON">THON</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p class="text-black">
-                      1 of 3 System Administrators responsible for the full migration and maintenance of a 9 server web infrastructure to Amazon Web Services, hosting THON’s global web presence across 4 websites.
-                      <br><br>
-                      Built out CI/CD Pipeline using AWS Fargate to deploy containerized Django-based web applications which handled ~2.7 million requests and a peak of ~2,500 requests/min during the 2-day THON Weekend.
-                      <br><br>
-                      Implemented fault tolerant Database infrastructure using Amazon RDS and SQL Database Replication.
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="http://www.thon.org/" target="_blank">
-                      <button type="button" class="btn btn-secondary">Learn More About THON</button>
-                    </a>
-                  </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-10">
+              <div class="card" style="margin-top: 2em;">
+                <div class="card-body">
+                  <p>text</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- KPMG Project Row -->
-      <div id="KPMG-div" class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/kpmg-logo.jpeg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left experience-padding">
-            <h4>June 2019 - August 2019<br>Tyson's Corner, VA</h4>
-            <h5>Software Engineering, Intern</h5>
-            <!-- Button trigger modal -->
-            <br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#KPMG-Center">
-              What I did at KPMG
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="KPMG-Center" tabindex="-1" role="dialog" aria-labelledby="KPMG" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="KPMG">KPMG</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p class="text-black"> I worked in the Federal Advisory practice as a software engineering intern for the Federal Digital Enablement practice.
-                      <br><br>I developed Java API backend for a full stack application, calculating and managing housing assistance payments of a 22 Billion dollar federal budget.
-                      <br><br>Additionally I developed a custom Hibernate database reverse engineering package to optimize entity object creation in both present and future project builds.
-                    </p>
-                  </div>
+      <div class="col-lg-8">
+        <div style="margin-top: 10%;">
+          <div class="row" style="height: 20%;">
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-      </div>
-
-      <!-- Boomi Project Row -->
-      <div id="Boomi-div" class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/boomi-logo.jpg" alt="">
+        <div style="margin-top: 5%;">
+          <div class="row" style="height: 20%;">
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left experience-padding">
-            <h4>May 2018 - August 2018<br>Chesterbrook, PA</h4>
-            <h5>Software Engineering, Intern</h5>
-            <!-- Button trigger modal -->
-            <br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Boomi-Center">
-              What I did at Boomi
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="Boomi-Center" tabindex="-1" role="dialog" aria-labelledby="Boomi" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="Boomi">Boomi</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p class="text-black">
-                      Collaborated with the Support organization to create monitoring and alerting tools to automatically gather diagnostic info.
-                      on a client’s platform issues upon creating a new ticket, handling over 100 tickets a week.
-                      <br><br>
-                      Developed a mobile and desktop workflow automation to allow Sales Engineers to log their
-                      new sales opportunities and leads more efficiently than in Salesforce (their current CRM at the time).
-                    </p>
-                  </div>
+        <div style="margin-top: 5%;">
+          <div class="row" style="height: 20%;">
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="height: 75px; width: 75px; margin: auto;">
+                <div class="card-body">
+                  <p>text</p>
                 </div>
               </div>
             </div>
@@ -254,116 +164,19 @@
 
       </div>
     </div>
-  </section>
-
-  <section class="transition-section-to-top">
-    <div class="container"></div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="projects-section custom-skills-section">
-    <div class="container">
-      <h1 class="text-white mb-4 skills-h1 text-left">Skills</h1>
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid half-bright" src="img/mountains-01.jpg" alt="">
-          <div class="centered"><h1 class="text-white">Languages</h1></div>
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-lg-left">
-                <ul style="list-style-type: none" class="skills-padding text-white-50">
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>C</li>
-                  <li>C++</li>
-                  <li>JavaScript</li>
-                  <li>HTML</li>
-                  <li>Swift</li>
-                  <li>SQL</li>
-                </ul>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
+    <div class="row" style="height: 15vh; text-align: center">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <p>text</p>
           </div>
         </div>
       </div>
-
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid half-bright" src="img/mountains-02.jpg" alt="">
-          <div class="centered"><h1 class="text-white">Platforms & Frameworks</h1></div>
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <ul style="list-style-type: none" class="text-white-50">
-                  <li>AWS</li>
-                  <li>Django</li>
-                  <li>Docker</li>
-                  <li>Boomi Atomsphere</li>
-                </ul>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="col-lg-3"></div>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section bg-black">
-    <div class="container">
-      <div class="row justify-content-center">
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="#">kylewetzler@gmail.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-book text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Resume</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="files/Kyle_Wetzler_resume.pdf">Download</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="social d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/kyle-wetzler-739b93190/" class="mx-2">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; Kyle Wetzler 2020
-    </div>
-  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

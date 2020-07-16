@@ -201,3 +201,38 @@
     background-position: center;
     background-size: cover;
 }
+
+.comcast-background {
+    background: url(../img/comcast-logo-square.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.linkedin-background {
+    background: url(../img/linkedin-logo-square.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.github-background {
+    background: url(../img/github-logo-square.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.phone-icon {
+    background: url(../img/phone-icon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mail-icon {
+    background: url(../img/mail-icon.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}

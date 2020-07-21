@@ -244,6 +244,17 @@
     background-size: cover;
 }
 
+.pla-logo-background {
+    background: url(../img/pla_logo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fourier-background {
+    background: url(../img/fourier.png);
+    background-position: center;
+    background-size: cover;
+}
 
 .phone-icon {
     background: url(../img/phone-icon.png);
@@ -279,4 +290,8 @@
 .modal-sizing {
     margin: 1rem;
     max-width: 100%;
+}
+
+.h-45 {
+    height: 45%;
 }

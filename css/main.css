@@ -292,6 +292,15 @@
     max-width: 100%;
 }
 
+.modal-content-max {
+    max-height: 540px;
+    max-width: 1248px;
+}
+
 .h-45 {
-    height: 45%;
+    height: 45% !important;
+}
+
+.h-90  {
+    height: 90% !important;
 }

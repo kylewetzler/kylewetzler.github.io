@@ -3,6 +3,9 @@ function startTime() {
     var w = today.getDay();
     var mo = today.getMonth();
     var d = today.getDate();
+    var time = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+
+
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
@@ -13,7 +16,7 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('time').innerHTML =
-        h + ":" + m;
+        time;
     document.getElementById('date').innerHTML =
         weekdays[w] + ', ' + months[mo] + ' ' + d;
     var t = setTimeout(startTime, 500);

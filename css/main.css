@@ -220,6 +220,31 @@
     background-size: cover;
 }
 
+.philly-map-background {
+    background: url(../img/philly_map.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.tysons-map-background {
+    background: url(../img/tysons_corner_map.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.chesterbrook-map-background {
+    background: url(../img/chesterbrook_map.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.thon-total-background {
+    background: url(../img/thon_total.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
 .phone-icon {
     background: url(../img/phone-icon.png);
     background-position: center;
@@ -249,4 +274,9 @@
 .fade-scale.show {
     opacity: 1;
     transform: scale(1);
+}
+
+.modal-sizing {
+    margin: 1rem;
+    max-width: 100%;
 }

@@ -22,13 +22,14 @@
   <link href="css/grayscale.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <!-- Typed JS file-->
-  <script src="typed.min.js"></script>
+  <script src="js/typed.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="https://daybrush.com/scenejs/release/latest/dist/scene.js"></script>
+  <script src="js/datetime.js"></script>
 
 </head>
 
-<body id="page-top" class="test-background">
+<body id="page-top" class="test-background" onload="startTime()">
   <div class="container-fluid">
     <div class="row" style="height: 85vh;">
       <!-- Widgets Section -->
@@ -40,8 +41,8 @@
             </div>
             <div class="col-lg-10">
               <div>
-                <h1>10:10</h1>
-                <p>Wednesday, July 15</p>
+                <h1 id="time">10:10</h1>
+                <p id="date">Wednesday, July 15</p>
               </div>
 
             </div>
@@ -60,9 +61,8 @@
             <div class="col-lg-5">
               <div class="card text-white" style="margin-top: 2em; min-height: 150px; border-radius: 1rem; background: rgba(0,0,0,0.24);
               border-color: transparent;">
+                <div class="card-header">Hi I'm Kyle!</div>
                 <div class="card-body">
-                  <p>Hi, I'm Kyle!</p>
-                  <hr>
                   <div id="typed-strings">
                     <p></p>
                     <p>I'm a creative thinker...</p>
@@ -91,6 +91,30 @@
             <div class="col-lg-10">
               <div class="card text-white" style="margin-top: 2em; border-radius: 1rem; background: rgba(0,0,0,0.24);
               border-color: transparent;">
+                <div class="card-header" style="color: rgb(48, 209, 88);">
+                  How This Site Works!
+                </div>
+                <div class="card-body">
+                  <p style="line-height: 20px;">To paradoxically have both a unique yet ubiquitous way of presenting myself on the internet, I
+                  wanted to design this website in the style of the world's most popular operating system, iOS</p>
+                  <small >So, how do I use it?</small>
+                  <hr style="border-top: 1px solid rgb(48, 209, 88);">
+                  <p style="line-height: 20px;">Just like you would iOS! The app rows correspond to different categories of things you may want
+                  to know about me</p>
+                  <p style="font-size: small;">Top Row: Work & Relevant Experience</p>
+                  <p style="font-size: small;">Middle Row: Technical abilities and Skills</p>
+                  <p style="font-size: small;">Bottom Row: Projects & Misc. Stuff</p>
+                  <hr style="border-top: 1px solid rgb(48, 209, 88);">
+                  <p style="line-height: 20px;">Keep Scrolling to learn more about me, and use the dock at the bottom of
+                  the page if you need to get in touch with me in any way</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-10">
+              <div class="card text-white" style="margin-top: 2em; border-radius: 1rem; background: rgba(0,0,0,0.24);
+              border-color: transparent;">
                 <div class="card-header" style="color: rgb(90, 200, 250);">
                   Education
                 </div>
@@ -104,23 +128,6 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-10">
-              <div class="card" style="margin-top: 2em; border-radius: 1rem;">
-                <div class="card-body">
-                  <p>text</p>
-                </div>
-              </div>
-            </div><div class="col-lg-2">
-          </div>
-            <div class="col-lg-10">
-              <div class="card" style="margin-top: 2em; border-radius: 1rem;">
-                <div class="card-body">
-                  <p>text</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -130,7 +137,7 @@
         <div style="margin-top: 10%;">
           <div class="row text-white" style="height: 20%; text-align: center;">
             <div class="col-lg-2">
-              <button type="button" class="btn text-white" style="box-shadow: transparent !important;" data-toggle="modal" data-target="#exampleModal">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#comcastModal">
                 <div class="card shadow-lg comcast-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
                   <div class="card-body">
                   </div>
@@ -138,31 +145,84 @@
                 <small>Comcast</small>
               </button>
             </div>
-            <div class="modal fade-scale" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content" style="width: 75vh; height: 75vh;">
+            <!-- Comcast Modal -->
+            <div class="modal fade-scale" id="comcastModal" tabindex="-1" role="dialog" aria-labelledby="comcastModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-sizing" role="document">
+                <div class="modal-content" style="height: 80vh; background: rgba(0,0,0,0.5)">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="comcastModalLabel">Comcast</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+                      <span aria-hidden="true" style="color: white;">x</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="row" style="height: 100%;">
+                      <div class="col-lg-6" style="height: 100%;">
+                        <div class="card shadow-lg philly-map-background" style="height: 100%; width: 100%; margin: auto; border-radius: 1rem;">
+                          <div class="card-body">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6" style="text-align: left;">
+                        <h1>Software Engineer</h1>
+                        <h2>June 2020 - Present</h2>
+                        <hr style="background: white;">
+                        <p>I currently work as a software engineer for Comcast in the Greater Philadelphia area.</p>
+                        <p>I work on the Unified Notes team taking on a largely DevOps role.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- THON app -->
             <div class="col-lg-2">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#thonModal">
               <div class="card shadow-lg thon-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
                 <div class="card-body">
                 </div>
               </div>
               <small>THON</small>
+              </button>
+            </div>
+            <!-- THON modal -->
+            <div class="modal fade-scale" id="thonModal" tabindex="-1" role="dialog" aria-labelledby="thonModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-sizing" role="document">
+                <div class="modal-content" style="height: 80vh; background: rgba(0,0,0,0.5)">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="thonModalLabel">The Pennsylvania State University Dance Marathon (THON) </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">x</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row" style="height: 100%;">
+                      <div class="col-lg-6" style="height: 100%;">
+                        <div class="card shadow-lg thon-total-background" style="height: 100%; width: 100%; margin: auto; border-radius: 1rem;">
+                          <div class="card-body">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6" style="text-align: left;">
+                        <h1>Systems Administrator</h1>
+                        <h2>April 2019 - April 2020</h2>
+                        <p>Learn more about THON and our battle to end pediatric cancer at <a href="www.thon.org">www.thon.org</a></p>
+                        <hr style="background: white;">
+                        <div style="margin-top: 2rem;">
+                          <p>1 of 3 System Administrators responsible for the full migration and maintenance of a
+                            9 server web infrastructure to Amazon Web Services, hosting THON’s global web presence across
+                            4 websites.</p>
+                          <p>Built out CI/CD Pipeline using AWS Fargate to deploy containerized Django-based web
+                            applications which handled ~2.7 million requests and a peak of ~2,500 requests/min during
+                            the 2-day THON Weekend.</p>
+                          <p>Implemented fault tolerant Database infrastructure using Amazon RDS and SQL Database
+                            Replication.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-lg-2">
               <div class="card shadow-lg kpmg-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
@@ -179,7 +239,7 @@
               <small>Dell Boomi</small>
             </div>
             <div class="col-lg-2">
-              <button type="button" class="btn text-white" style="box-shadow: transparent !important;" data-toggle="modal" data-target="#exampleModal">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#exampleModal">
                 <div class="card shadow-lg" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem; background: rgba(0,0,0,0.24)">
                   <div class="card-body">
                     <i class="fas fa-plus-circle fa-2x text-gray-300"></i>
@@ -275,7 +335,7 @@
                 </div>
               </div>
               <div class="col-lg-2">
-                <div class="card shadow-lg mail-icon" style="height: 60px; width: 60px; margin: auto; border-radius: 1rem;">
+                <div class="card shadow-lg mail-icon" style="height: 60px; width: 60px; margin: auto; border-radius: 1rem; border-color: transparent;">
                   <div class="card-body">
                   </div>
                 </div>
@@ -309,7 +369,6 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
   <script src="js/scene.js"></script>
   <script src="js/scroll-trigger.js"></script>
 </body>

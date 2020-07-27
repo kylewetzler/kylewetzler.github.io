@@ -250,6 +250,54 @@
     background-size: cover;
 }
 
+.pla-screenshot-background {
+    background: url(../img/pla-screenshot.png);
+    background-position: left;
+    background-size: cover;
+}
+
+.penn-state-logo-background {
+    background: url(../img/psu-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.python-logo-background {
+    background: url(../img/python-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.java-logo-background {
+    background: url(../img/java-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.django-logo-background {
+    background: url(../img/django-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.react-logo-background {
+    background: url(../img/react-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.aws-logo-background {
+    background: url(../img/aws-logo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.docker-logo-background {
+    background: url(../img/docker-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
 .fourier-background {
     background: url(../img/fourier.png);
     background-position: center;
@@ -294,6 +342,10 @@
 
 .modal-content-max {
     max-height: 540px;
+    max-width: 1248px;
+}
+
+.modal-width-max {
     max-width: 1248px;
 }
 

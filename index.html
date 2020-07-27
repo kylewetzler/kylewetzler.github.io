@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -22,187 +22,584 @@
   <link href="css/grayscale.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <!-- Typed JS file-->
-  <script src="typed.min.js"></script>
+  <script src="js/typed.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="https://daybrush.com/scenejs/release/latest/dist/scene.js"></script>
+  <script src="js/datetime.js"></script>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="test-background" onload="startTime()">
+  <div class="container-fluid overflow-auto">
+    <div class="row" style="height: 85vh;">
+      <!-- Widgets Section -->
+      <div class="col-lg-4">
+        <div style="margin-top: 20%;">
+          <!-- Time and Date -->
+          <div class="row text-white">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-10">
+              <div>
+                <h1 id="time">10:10</h1>
+                <p id="date">Wednesday, July 15</p>
+              </div>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Kyle Wetzler</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="PLA.html">PLA</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <div class="bottom-spacing">
-          <img src="img/photo_headshot.jpg" class="img-responsive rounded-circle"
-               style="display:inline" alt="Kyle Wetzler" width="350" height="350">
-        </div>
-        <h1 class="mx-auto my-0 text-uppercase masthead-letter-spacing">Hi, I'm Kyle</h1>
-        <div id="typed-strings">
-          <p></p>
-          <p class="montserrat">I'm a student at Penn State</p>
-          <p class="montserrat">I'm a creative thinker</p>
-          <p class="montserrat">I'm an aspiring developer</p>
-        </div>
-        <style> #typed {color:rgba(255,255,255,.5)!important;
-                        font-size: 30px;}
-        .typed-cursor {font-size: 30px;}
-        </style>
-        <span id="typed"></span>
-        <script>
-          var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings',
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true
-          });
-        </script>
-      </div>
-    </div>
-  </header>
-
-  <!-- Education Section -->
-  <section  id="education" class="custom-education-section education">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h1 class="text-white mb-4">Education</h1>
-         <h2 class="text-white-50">I am a student at <b>Penn State University</b> in the Class of 2020. I'm in the <br><b>Schreyer Honors College</b>, and I study a couple disciplines.<br><br></h2>
-          <h2 class="text-white-50">Majors:</h2>
-          <ul class="text-white">
-            <li><h3><b>Computer Science</b> College of Engineering</h3></li>
-            <li><h3><b>Mathematics</b> Eberly College of Science</h3></li>
-          </ul>
-          <h2 class="text-white-50">Minor:</h2>
-          <ul class="text-white">
-            <li><h3><b>Physics</b> Eberly College of Science</h3></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="transition-section-to-bottom">
-    <div class="container"></div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="projects-section bg-light">
-    <div class="container">
-      <!-- <h1 class="text-black experience-h1 text-center mb-4"><b>Experience</b></h1> -->
-      <!-- THON Project Row -->
-      <div>
-        <div class="overflow bottom-padding align-center">
-          <div class="text"><span>Experience</span></div>
-        </div>
-      </div>
-      <div id="THON-div" class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/THON-logo.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left experience-padding">
-            <h4>April 2019 - Present<br>State College, PA</h4>
-            <h5>Systems Administrator</h5>
-            <!-- Button trigger modal -->
-            <br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#THON-Center">
-              What I do for THON
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="THON-Center" tabindex="-1" role="dialog" aria-labelledby="THON" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="THON">THON</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+            </div>
+          </div>
+          <!-- Widgets -->
+          <div class="row overflow-auto" style="height: 50vh;">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-5">
+              <div class="card headshot-background" style="object-fit: contain; margin-top: 2em;border-radius: 1rem; border-color: white;
+              width: 100%; padding-top: 100%;">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="card text-white" style="margin-top: 2em; min-height: 150px; border-radius: 1rem; background: rgba(0,0,0,0.24);
+              border-color: transparent;">
+                <div class="card-header">Hi I'm Kyle!</div>
+                <div class="card-body">
+                  <div id="typed-strings">
+                    <p></p>
+                    <p>I'm a creative thinker...</p>
+                    <p>I'm a developer...</p>
+                    <p>I'm a Penn State Stu</p>
+                    <p>I'm a Penn State...</p>
+                    <p>I'm a Penn State grad</p>
                   </div>
-                  <div class="modal-body">
-                    <p class="text-black">
-                      1 of 3 System Administrators responsible for the full migration and maintenance of a 9 server web infrastructure to Amazon Web Services, hosting THON’s global web presence across 4 websites.
-                      <br><br>
-                      Built out CI/CD Pipeline using AWS Fargate to deploy containerized Django-based web applications which handled ~2.7 million requests and a peak of ~2,500 requests/min during the 2-day THON Weekend.
-                      <br><br>
-                      Implemented fault tolerant Database infrastructure using Amazon RDS and SQL Database Replication.
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="http://www.thon.org/" target="_blank">
-                      <button type="button" class="btn btn-secondary">Learn More About THON</button>
-                    </a>
-                  </div>
+                  <style> #typed
+                  .typed-cursor {font-size: 1em;}
+                  </style>
+                  <span id="typed"></span>
+                  <script>
+                    var typed = new Typed('#typed', {
+                      stringsElement: '#typed-strings',
+                      typeSpeed: 50,
+                      backSpeed: 50,
+                      loop: true
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-10">
+              <div class="card text-white" style="margin-top: 2em; border-radius: 1rem; background: rgba(0,0,0,0.24);
+              border-color: transparent;">
+                <div class="card-header" style="color: rgb(48, 209, 88);">
+                  How This Site Works!
+                </div>
+                <div class="card-body">
+                  <p style="line-height: 20px;">To have both a unique yet ubiquitous way of presenting myself on the internet, I
+                  wanted to design this website in the style of the world's most popular operating system, iOS</p>
+                  <small >So, how do I use it?</small>
+                  <hr style="border-top: 1px solid rgb(48, 209, 88);">
+                  <p style="line-height: 20px;">Just like you would iOS! The app rows correspond to different categories of things you may want
+                  to know about me</p>
+                  <p style="font-size: small;">Top Row: Work & Relevant Experience</p>
+                  <p style="font-size: small;">Middle Row: Technical abilities and Skills</p>
+                  <p style="font-size: small;">Bottom Row: Projects & Misc. Stuff</p>
+                  <hr style="border-top: 1px solid rgb(48, 209, 88);">
+                  <p style="line-height: 20px;">Keep Scrolling to learn more about me, and use the dock at the bottom of
+                  the page if you need to get in touch with me in any way</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-10">
+              <div class="card text-white" style="margin-top: 2em; border-radius: 1rem; background: rgba(0,0,0,0.24);
+              border-color: transparent;">
+                <div class="card-header" style="color: rgb(90, 200, 250);">
+                  Education
+                </div>
+                <div class="card-body" style="line-height: 5px;">
+                  <p>Pennsylvania State University</p>
+                  <small>Class of 2020</small>
+                  <hr style="border-top: 1px solid rgb(90,200,250);">
+                  <p>B.S. Computer Science</p>
+                  <p>B.S. Mathematics</p>
+                  <small style="margin-left: 2em;">with a Minor in Physics</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- KPMG Project Row -->
-      <div id="KPMG-div" class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/kpmg-logo.jpeg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left experience-padding">
-            <h4>June 2019 - August 2019<br>Tyson's Corner, VA</h4>
-            <h5>Software Engineering, Intern</h5>
-            <!-- Button trigger modal -->
-            <br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#KPMG-Center">
-              What I did at KPMG
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="KPMG-Center" tabindex="-1" role="dialog" aria-labelledby="KPMG" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+      <!-- Apps Section -->
+      <div class="col-lg-8">
+        <!-- Top Row (Experience) -->
+        <div style="margin-top: 10%;">
+          <div class="row text-white text-center" style="height: 20%;">
+            <!-- Comcast app -->
+            <div class="col-lg-2">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#comcastModal">
+                <div class="card shadow-lg comcast-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                  <div class="card-body">
+                  </div>
+                </div>
+                <small>Comcast</small>
+              </button>
+            </div>
+            <!-- Comcast Modal -->
+            <div class="modal fade-scale" id="comcastModal" tabindex="-1" role="dialog" aria-labelledby="comcastModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-sizing" role="document">
+                <div class="modal-content modal-content-max m-auto" style="height: 80vh; background: rgba(0,0,0,0.5);">
                   <div class="modal-header">
-                    <h3 class="modal-title" id="KPMG">KPMG</h3>
+                    <h5 class="modal-title" id="comcastModalLabel">Comcast</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+                      <span aria-hidden="true" style="color: white;">x</span>
                     </button>
                   </div>
-                  <div class="modal-body">
-                    <p class="text-black"> I worked in the Federal Advisory practice as a software engineering intern for the Federal Digital Enablement practice.
-                      <br><br>I developed Java API backend for a full stack application, calculating and managing housing assistance payments of a 22 Billion dollar federal budget.
-                      <br><br>Additionally I developed a custom Hibernate database reverse engineering package to optimize entity object creation in both present and future project builds.
-                    </p>
+                  <div class="modal-body h-90">
+                    <div class="row h-100">
+                      <div class="col-lg-6 h-100">
+                        <div class="card shadow-lg philly-map-background h-100 w-100" style="margin: auto; border-radius: 1rem;">
+                          <div class="card-body">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6" style="text-align: left;">
+                        <h1>Software Engineer</h1>
+                        <h2>June 2020 - Present</h2>
+                        <hr style="background: white;">
+                        <div style="margin-top: 2rem;">
+                          <p>I currently work as a software engineer for Comcast in the Greater Philadelphia area.</p>
+                          <p>I work on the Unified Notes team taking on a largely DevOps role. Largely, our team is responsible
+                          for the development and maintenance of 4 backend services and APIs used internally by Comcast.</p>
+                          <p>The services and tools we provide are reachable by REST and Soap endpoints taking in millions
+                          of calls per day.</p>
+                          <p>The consumers of our services can save their data to several data locations we manage, including
+                          AWS S3, an internal Couchbase DB, and more.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- THON app -->
+            <div class="col-lg-2">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#thonModal">
+              <div class="card shadow-lg thon-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                <div class="card-body">
+                </div>
+              </div>
+              <small>THON</small>
+              </button>
+            </div>
+            <!-- THON modal -->
+            <div class="modal fade-scale" id="thonModal" tabindex="-1" role="dialog" aria-labelledby="thonModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-sizing" role="document">
+                <div class="modal-content modal-content-max m-auto" style="height: 80vh; background: rgba(0,0,0,0.5)">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="thonModalLabel">The Pennsylvania State University Dance Marathon (THON) </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">x</span>
+                    </button>
+                  </div>
+                  <div class="modal-body h-90">
+                    <div class="row" style="height: 100%;">
+                      <div class="col-lg-6" style="height: 100%;">
+                        <div class="card shadow-lg thon-total-background" style="height: 100%; width: 100%; margin: auto; border-radius: 1rem;">
+                          <div class="card-body">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6" style="text-align: left;">
+                        <h1>Systems Administrator</h1>
+                        <h2>April 2019 - April 2020</h2>
+                        <p>Learn more about THON and our battle to end pediatric cancer at <a href="www.thon.org">www.thon.org</a></p>
+                        <hr style="background: white;">
+                        <div style="margin-top: 2rem;">
+                          <p>1 of 3 System Administrators responsible for the full migration and maintenance of a
+                            9 server web infrastructure to Amazon Web Services, hosting THON’s global web presence across
+                            4 websites.</p>
+                          <p>Built out CI/CD Pipeline using AWS Fargate to deploy containerized Django-based web
+                            applications which handled ~2.7 million requests and a peak of ~2,500 requests/min during
+                            the 2-day THON Weekend.</p>
+                          <p>Implemented fault tolerant Database infrastructure using Amazon RDS and SQL Database
+                            Replication.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- KPMG app -->
+            <div class="col-lg-2">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#kpmgModal">
+              <div class="card shadow-lg kpmg-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                <div class="card-body">
+                </div>
+              </div>
+              <small>KPMG</small>
+              </button>
+            </div>
+            <!-- KPMG Modal -->
+            <div class="modal fade-scale" id="kpmgModal" tabindex="-1" role="dialog" aria-labelledby="kpmgModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-sizing" role="document">
+                <div class="modal-content modal-content-max m-auto" style="height: 80vh; background: rgba(0,0,0,0.5)">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="kpmgModalLabel">KPMG Federal Consulting</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">x</span>
+                    </button>
+                  </div>
+                  <div class="modal-body h-90">
+                    <div class="row" style="height: 100%;">
+                      <div class="col-lg-6" style="height: 100%;">
+                        <div class="card shadow-lg tysons-map-background" style="height: 100%; width: 100%; margin: auto; border-radius: 1rem;">
+                          <div class="card-body">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6" style="text-align: left;">
+                        <h1>Software Engineering Intern</h1>
+                        <h2>June 2019 - August 2019</h2>
+                        <hr style="background: white;">
+                        <div style="margin-top: 2rem;">
+                          <p>I worked in the Federal Advisory practice as a software engineering intern for the
+                            Federal Digital Enablement practice. </p>
+                          <p>I developed Java API backend for a full stack application, calculating and managing
+                            housing assistance payments of a 22 Billion dollar federal budget.</p>
+                          <p>Additionally I developed a custom Hibernate database reverse engineering package to
+                            optimize entity object creation in both present and future project builds.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Boomi app -->
+            <div class="col-lg-2">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#boomiModal">
+              <div class="card shadow-lg boomi-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                <div class="card-body">
+                </div>
+              </div>
+              <small>Dell Boomi</small>
+              </button>
+            </div>
+            <!-- Boomi modal -->
+            <div class="modal fade-scale" id="boomiModal" tabindex="-1" role="dialog" aria-labelledby="boomiModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-sizing" role="document">
+                <div class="modal-content modal-content-max m-auto" style="height: 80vh; background: rgba(0,0,0,0.5)">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="boomiModalLabel">Dell Boomi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">x</span>
+                    </button>
+                  </div>
+                  <div class="modal-body h-90">
+                    <div class="row" style="height: 100%;">
+                      <div class="col-lg-6" style="height: 100%;">
+                        <div class="card shadow-lg chesterbrook-map-background" style="height: 100%; width: 100%; margin: auto; border-radius: 1rem;">
+                          <div class="card-body">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6" style="text-align: left;">
+                        <h1>Software Engineering Intern</h1>
+                        <h2>May 2018 - August 2018</h2>
+                        <hr style="background: white;">
+                        <div style="margin-top: 2rem;">
+                          <p>Collaborated with the Support organization to create monitoring and alerting tools to
+                            automatically gather diagnostic info. on a client’s platform issues upon creating a new
+                            ticket, handling over 100 tickets a week. </p>
+                          <p>Developed a mobile and desktop workflow automation to allow Sales Engineers to log their
+                            new sales opportunities and leads more efficiently than in Salesforce (their current CRM
+                            at the time).</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Other app -->
+            <div class="col-lg-2">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#otherModal">
+                <div class="card shadow-lg" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem; background: rgba(0,0,0,0.24)">
+                  <div class="card-body">
+                    <i class="fas fa-plus-circle fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+                <small>Other</small>
+              </button>
+            </div>
+            <!-- Other modal -->
+            <div class="modal fade-scale" id="otherModal" tabindex="-1" role="dialog" aria-labelledby="otherModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-sizing" role="document">
+                <div class="modal-content modal-content-max m-auto" style="height: 80vh; background: rgba(0,0,0,0.5)">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="otherModalLabel">Other Relevant Experience</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">x</span>
+                    </button>
+                  </div>
+                  <div class="modal-body h-90">
+                    <div class="row h-100">
+                      <div class="col-lg-6 h-100">
+                        <div class="row h-100">
+                          <div class="col-lg-6 h-45">
+                            <div class="card" style="height: 100%; width: 100%; margin: auto; background: transparent; border: transparent;">
+                              <div class="card-body text-right">
+                                <p>I've done web development work for Penn State's Presidential Leadership Academy, of which I am an alum.</p>
+                                <p>Check out more details in the PLA project app</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 h-45">
+                            <div class="card shadow-lg pla-logo-background" style="height: 100%; width: 100%; margin: auto; border-radius: 1rem;">
+                              <div class="card-body">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 h-45">
+                            <div class="card shadow-lg fourier-background" style="height: 100%; width: 100%; margin: auto; border-radius: 1rem;">
+                              <div class="card-body">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 h-45">
+                            <div class="card" style="height: 100%; width: 100%; margin: auto; background: transparent; border: transparent;">
+                              <div class="card-body text-left">
+                                <p>For this very website, I've worked with javascript to bring Fourier approximations
+                                into a fun animation</p>
+                                <p>check it out by clicking the 'Fourier Drawings' app</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 h-100">
+                        <div class="row h-100">
+                          <div class="col-lg-12 h-45">
+                            <h1>Software Engineer</h1>
+                            <h2>Present</h2>
+                            <hr style="background: white;">
+                          </div>
+                          <div class="col-lg-6 h-45">
+                            <div class="card shadow-lg" style="height: 100%; width: 100%; margin: auto; background: rgba(0,0,0,0.24);">
+                              <div class="card-body m-auto" style="flex: none;">
+                                <i class="fas fa-plus-circle fa-2x text-gray-300"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 h-45">
+                            <div class="card" style="height: 100%; width: 100%; margin: auto; background: transparent; border: transparent;">
+                              <div class="card-body text-left">
+                                <p>I continue to work on other projects that inspire me and will continue to update
+                                this page with my latest work!</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Middle Row -->
+        <div style="margin-top: 5%;">
+          <div class="row text-center" style="height: 20%;">
+            <!-- Python app -->
+            <div class="col-lg-2">
+              <div class="dropdown">
+                <button type="button" class="btn text-white" id="pythonDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow: transparent !important; padding: 0;">
+                  <div class="card shadow-lg python-logo-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                    <div class="card-body">
+                    </div>
+                  </div>
+                  <small>Python</small>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pythonDropdown" style="background: rgba(0,0,0, 0.75); border-radius: 1rem;">
+                  <div class="card-body text-white">
+                    <p style="line-height: 20px;">Proficiency</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Java app -->
+            <div class="col-lg-2">
+              <div class="dropdown">
+                <button type="button" class="btn text-white" id="javaDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow: transparent !important; padding: 0;">
+                  <div class="card shadow-lg java-logo-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                    <div class="card-body">
+                    </div>
+                  </div>
+                  <small>Java</small>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="javaDropdown" style="background: rgba(0,0,0, 0.75); border-radius: 1rem;">
+                  <div class="card-body text-white">
+                    <p style="line-height: 20px;">Proficiency</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- React app -->
+            <div class="col-lg-2">
+              <div class="dropdown">
+                <button type="button" class="btn text-white" id="reactDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow: transparent !important; padding: 0;">
+                  <div class="card shadow-lg react-logo-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                    <div class="card-body">
+                    </div>
+                  </div>
+                  <small>React</small>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="reactDropdown" style="background: rgba(0,0,0, 0.75); border-radius: 1rem;">
+                  <div class="card-body text-white">
+                    <p style="line-height: 20px;">Proficiency</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- AWS app -->
+            <div class="col-lg-2">
+              <div class="dropdown">
+                <button type="button" class="btn text-white" id="awsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow: transparent !important; padding: 0;">
+                  <div class="card shadow-lg aws-logo-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                    <div class="card-body">
+                    </div>
+                  </div>
+                  <small>AWS</small>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="awsDropdown" style="background: rgba(0,0,0, 0.75); border-radius: 1rem;">
+                  <div class="card-body text-white">
+                    <p style="line-height: 20px;">Proficiency</p>
+                    <p style="line-height: 10px; font-size: 10px;">* Certified Cloud Practitioner</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Docker app -->
+            <div class="col-lg-2">
+              <div class="dropdown">
+                <button type="button" class="btn text-white" id="dockerDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow: transparent !important; padding: 0;">
+                  <div class="card shadow-lg docker-logo-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                    <div class="card-body">
+                    </div>
+                  </div>
+                  <small>Docker</small>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dockerDropdown" style="background: rgba(0,0,0, 0.75); border-radius: 1rem;">
+                  <div class="card-body text-white">
+                    <p style="line-height: 20px;">Proficiency</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Row -->
+        <div style="margin-top: 5%;">
+          <div class="row text-center text-white" style="height: 20%;">
+            <!-- Fourier app -->
+            <div class="col-lg-2">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#fourierModal">
+                <div class="card shadow-lg fourier-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                  <div class="card-body">
+                  </div>
+                </div>
+                <small>Fourier Project</small>
+              </button>
+            </div>
+            <!-- Fourier modal -->
+            <div class="modal fade-scale" id="fourierModal" tabindex="-1" role="dialog" aria-labelledby="boomiModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-sizing" role="document">
+                <div class="modal-content modal-width-max m-auto" style="background: rgba(0,0,0,0.5)">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="fourierModalLabel">Discrete Fourier Transform</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">x</span>
+                    </button>
+                  </div>
+                  <div class="modal-body h-90">
+                    <div class="row" style="height: 100%;">
+                      <div class="col-lg-12" style="height: 100%;">
+                          <p>This JavaScript project allows you to draw a small image by hand, and have it approximated and
+                            recreated using the Fourier Transform. Just click in the small sketch window and draw your image. When you're
+                            happy with it, click again within the window to stop drawing, and then click the <b>"Generate Sketch"</b> button and
+                            watch it get recreated!</p>
+                            <div id="c1"></div>
+                            <div class="mt-2 mb-3">
+                              <button class="btn btn-secondary" onclick="clearSketch()">Clear Sketch</button>
+                              <button class="btn btn-primary" onclick="triggerSketch()">Generate Sketch</button>
+                            </div>
+                            <div id="c2"></div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-2">
+              <button type="button" class="btn text-white" style="box-shadow: transparent !important; padding: 0;" data-toggle="modal" data-target="#plaModal">
+                <div class="card shadow-lg penn-state-logo-background" style="height: 75px; width: 75px; margin: auto; border-radius: 1rem;">
+                  <div class="card-body">
+                  </div>
+                </div>
+                <small>PLA Project</small>
+              </button>
+            </div>
+            <!-- PLA modal -->
+            <div class="modal fade-scale" id="plaModal" tabindex="-1" role="dialog" aria-labelledby="plaModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-sizing" role="document">
+                <div class="modal-content modal-content-max m-auto" style="height: 80vh; background: rgba(0,0,0,0.5)">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="plaModalLabel">PLA Mentoring and Networking Web App</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">x</span>
+                    </button>
+                  </div>
+                  <div class="modal-body h-90">
+                    <div class="row" style="height: 100%;">
+                      <div class="col-lg-6" style="height: 100%;">
+                        <div class="card shadow-lg pla-screenshot-background" style="height: 100%; width: 100%; margin: auto; border-radius: 1rem;">
+                          <div class="card-body">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6" style="text-align: left;">
+                        <h1>Software Engineer</h1>
+                        <h2>May 2020 - Present</h2>
+                        <hr style="background: white;">
+                        <div style="margin-top: 2rem;">
+                          <p>As an alumni of the Presidential Leadership Academy I have developed a new web app for the organization to use to foster
+                          interaction between current members and alumni, as well as leadership.</p>
+                          <p>Developed in Django, the site is designed to make it easier for the members and alumni
+                            to make a connection, hopefully leading to useful mentorship. To make communication as easy as possible,
+                            I developed a full-featured chat application (pictured) with the use of WebSockets</p>
+                          <p>For scalability, I have developed the site running in Docker containers</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -211,159 +608,60 @@
         </div>
 
       </div>
-
-      <!-- Boomi Project Row -->
-      <div id="Boomi-div" class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/boomi-logo.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left experience-padding">
-            <h4>May 2018 - August 2018<br>Chesterbrook, PA</h4>
-            <h5>Software Engineering, Intern</h5>
-            <!-- Button trigger modal -->
-            <br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Boomi-Center">
-              What I did at Boomi
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="Boomi-Center" tabindex="-1" role="dialog" aria-labelledby="Boomi" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="Boomi">Boomi</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p class="text-black">
-                      Collaborated with the Support organization to create monitoring and alerting tools to automatically gather diagnostic info.
-                      on a client’s platform issues upon creating a new ticket, handling over 100 tickets a week.
-                      <br><br>
-                      Developed a mobile and desktop workflow automation to allow Sales Engineers to log their
-                      new sales opportunities and leads more efficiently than in Salesforce (their current CRM at the time).
-                    </p>
+    </div>
+    <!-- Dock section -->
+    <div class="row" style="height: 15vh; text-align: center">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4" style="height: 90%;">
+        <div class="card shadow-lg" style="border-radius: 1rem;  background: rgba(0,0,0,0.24);
+              border-color: transparent;">
+            <div class="row" style="padding-top: 1rem; padding-bottom: 1rem;">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-2">
+                <div class="card shadow-lg phone-icon" style="height: 60px; width: 60px; margin: auto; border-radius: 1rem; border-color: transparent;">
+                  <div class="card-body">
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="transition-section-to-top">
-    <div class="container"></div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="projects-section custom-skills-section">
-    <div class="container">
-      <h1 class="text-white mb-4 skills-h1 text-left">Skills</h1>
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid half-bright" src="img/mountains-01.jpg" alt="">
-          <div class="centered"><h1 class="text-white">Languages</h1></div>
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-lg-left">
-                <ul style="list-style-type: none" class="skills-padding text-white-50">
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>C</li>
-                  <li>C++</li>
-                  <li>JavaScript</li>
-                  <li>HTML</li>
-                  <li>Swift</li>
-                  <li>SQL</li>
-                </ul>
-                <hr class="d-none d-lg-block mb-0 ml-0">
+              <div class="col-lg-2">
+                <div class="dropup">
+                  <button type="button" class="btn text-white" id="mailDropup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow: transparent !important; padding: 0;">
+                    <div class="card shadow-lg mail-icon" style="height: 60px; width: 60px; margin: auto; border-radius: 1rem;">
+                      <div class="card-body">
+                      </div>
+                    </div>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="mailDropup" style="background: rgba(0,0,0, 0.75); border-radius: 1rem;">
+                    <div class="card-body text-white">
+                      kylewetzler@gmail.com
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid half-bright" src="img/mountains-02.jpg" alt="">
-          <div class="centered"><h1 class="text-white">Platforms & Frameworks</h1></div>
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <ul style="list-style-type: none" class="text-white-50">
-                  <li>AWS</li>
-                  <li>Django</li>
-                  <li>Docker</li>
-                  <li>Boomi Atomsphere</li>
-                </ul>
-                <hr class="d-none d-lg-block mb-0 mr-0">
+              <div class="col-lg-2">
+                <a href="https://www.linkedin.com/in/kyle-wetzler-739b93190/">
+                <div class="card shadow-lg linkedin-background" style="height: 60px; width: 60px; margin: auto; border-radius: 1rem;">
+                  <div class="card-body">
+                  </div>
+                </div>
+                </a>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section bg-black">
-    <div class="container">
-      <div class="row justify-content-center">
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="#">kylewetzler@gmail.com</a>
+              <div class="col-lg-2">
+                <a href="https://github.com/kylewetzler">
+                <div class="card shadow-lg github-background" style="height: 60px; width: 60px; margin: auto; border-radius: 1rem;">
+                  <div class="card-body">
+                  </div>
+                </div>
+                </a>
               </div>
+              <div class="col-lg-2"></div>
             </div>
-          </div>
         </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-book text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Resume</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="files/Kyle_Wetzler_resume.pdf">Download</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-
-      <div class="social d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/kyle-wetzler-739b93190/" class="mx-2">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-
+      <div class="col-lg-4"></div>
     </div>
-  </section>
+  </div>
 
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; Kyle Wetzler 2020
-    </div>
-  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -372,10 +670,14 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
   <script src="js/scene.js"></script>
   <script src="js/scroll-trigger.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+
+  <script src="js/drawing.js"></script>
+  <script src="js/fourier.js"></script>
+  <script src="js/sketch.js"></script>
 </body>
 
 </html>

@@ -172,3 +172,187 @@
     padding-bottom: 10em;
 }
 
+.test-background {
+    background: url(../img/big-sur.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.headshot-background {
+    background: url(../img/photo_headshot.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.kpmg-background {
+    background: url(../img/kpmg-logo-square.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.thon-background {
+    background: url(../img/thon-logo-square.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.boomi-background {
+    background: url(../img/boomi-logo-square.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.comcast-background {
+    background: url(../img/comcast-logo-square.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.linkedin-background {
+    background: url(../img/linkedin-logo-square.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.github-background {
+    background: url(../img/github-logo-square.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.philly-map-background {
+    background: url(../img/philly_map.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.tysons-map-background {
+    background: url(../img/tysons_corner_map.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.chesterbrook-map-background {
+    background: url(../img/chesterbrook_map.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.thon-total-background {
+    background: url(../img/thon_total.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.pla-logo-background {
+    background: url(../img/pla_logo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.pla-screenshot-background {
+    background: url(../img/pla-screenshot.png);
+    background-position: left;
+    background-size: cover;
+}
+
+.penn-state-logo-background {
+    background: url(../img/psu-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.python-logo-background {
+    background: url(../img/python-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.java-logo-background {
+    background: url(../img/java-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.django-logo-background {
+    background: url(../img/django-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.react-logo-background {
+    background: url(../img/react-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.aws-logo-background {
+    background: url(../img/aws-logo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.docker-logo-background {
+    background: url(../img/docker-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.fourier-background {
+    background: url(../img/fourier.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.phone-icon {
+    background: url(../img/phone-icon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mail-icon {
+    background: url(../img/mail-icon.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+
+.fade-scale {
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.fade-scale.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-sizing {
+    margin: 1rem;
+    max-width: 100%;
+}
+
+.modal-content-max {
+    max-height: 540px;
+    max-width: 1248px;
+}
+
+.modal-width-max {
+    max-width: 1248px;
+}
+
+.h-45 {
+    height: 45% !important;
+}
+
+.h-90  {
+    height: 90% !important;
+}
